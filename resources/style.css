@@ -1,0 +1,133 @@
+html,
+  body {
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: white;
+    line-height: 1.4;
+  }
+  .container {
+    max-width: 960px;
+    margin: auto;
+  }
+
+  /* Header */
+  header {
+    background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30rem;
+    padding-top: 1rem;
+  }
+
+  nav {
+    /*margin-top: 1rem;*/
+    padding: 1rem 0;
+    background-color: cadetblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav img {
+    height: 1.5rem;
+    padding-left: 2rem;
+    margin-right: 1rem;
+  }
+
+  nav div {
+    display: flex;
+    align-items: center;
+  }
+
+  ul li {
+    display: inline;
+    padding: 0 2rem;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .main-banner {
+    padding: 1.5rem 5rem;
+    color: black;
+    background-color: white;
+    line-height: 1.2;
+    margin-top: 10rem;
+    margin-right: -2rem;
+    display: inline-block;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  header .flex {
+    justify-content: flex-end;
+  }
+
+  /* Tablet screens */
+  @media only screen and (max-width: 1024px) {
+    header {
+      padding-top: 0;
+      height: 22rem;
+    }
+    nav .container {
+      width: 100%;
+    }
+    .main-banner {
+      margin-top: 5rem;
+      padding: .75rem 4rem;
+      margin-right: 2rem;
+    }
+    .main-banner h1 {
+      font-size: 1.33rem;
+    }
+  }
+  /* Mobile screens */
+  @media only screen and (max-width: 480px) {
+    .menu ul {
+      display: none;
+    }
+
+    .menu ul.mobile-menu {
+      display: block;
+    }
+
+    header div span {
+      display: none;
+    }
+
+    header {
+      background-position: 20%;
+      height: 17rem;
+    }
+
+    .main-banner {
+      padding: 1rem auto;
+      margin-top: 9rem;
+      width: 100%;
+      text-align: center;
+    }
+
+    .main-banner h1 {
+      font-size: 1rem;
+    }
+  }
+
+  /* Content */
+  .content {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Service */
+  .service {
+    
+  }
